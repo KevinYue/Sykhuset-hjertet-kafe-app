@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/HjertetKafeMoss.iml" filepath="$PROJECT_DIR$/.idea/modules/HjertetKafeMoss.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/HjertetKafeMoss.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/HjertetKafeMoss.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/HjertetKafeMoss.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/HjertetKafeMoss.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/HjertetKafeMoss.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/HjertetKafeMoss.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/HjertetKafeMoss.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/HjertetKafeMoss.app.unitTest.iml" />
     </modules>
   </component>
 </project>
