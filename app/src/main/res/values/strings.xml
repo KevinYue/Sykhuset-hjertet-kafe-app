@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">HjertetKafeMoss</string>
     <string name="logo">logo</string>
+    <string name="hjertet_kafe_moss">Hjertet Kafé Moss</string>
+    <string name="forsidebilde">forsidebilde</string>
+    <string name="order_description">Bestilling app for operasjon for å bestille og levering av mat</string>
+    <string name="start">Start</string>
+    <string name="telefonnummer">Telefonnummer: 69866240</string>
 </resources>
