@@ -6,4 +6,11 @@
     <string name="order_description">Bestilling app for operasjon for å bestille og levering av mat</string>
     <string name="start">Start</string>
     <string name="telefonnummer">Telefonnummer: 69866240</string>
+    <string name="search_here">Søk her!</string>
+    <string name="search_food">Søk etter matbestillingen</string>
+    <string name="popular">Mest kjøpte</string>
+    <string name="home">Hjem</string>
+    <string name="category">Kategorier</string>
+    <string name="order">Bestillinger</string>
+    <string name="string_about">Om oss</string>
 </resources>
