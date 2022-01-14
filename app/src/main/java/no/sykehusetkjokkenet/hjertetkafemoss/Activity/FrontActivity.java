@@ -6,7 +6,6 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import no.sykehusetkjokkenet.hjertetkafemoss.MainActivity;
 import no.sykehusetkjokkenet.hjertetkafemoss.R;
 
 public class FrontActivity extends AppCompatActivity {
