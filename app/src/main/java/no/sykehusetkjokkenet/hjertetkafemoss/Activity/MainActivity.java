@@ -1,23 +1,23 @@
 package no.sykehusetkjokkenet.hjertetkafemoss.Activity;
 
 import android.os.Bundle;
-import android.view.MenuItem;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationView;
 
+import java.util.ArrayList;
+
+import no.sykehusetkjokkenet.hjertetkafemoss.Model.Category;
 import no.sykehusetkjokkenet.hjertetkafemoss.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    //private DrawerLayout drawerLayout;
-    //private BottomNavigationView bottomNavigationView;
+    private RecyclerView recyclerViewCategory;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Set up bottom navigation view
         setupBottomNavigation();
+
     }
 
     private void setupBottomNavigation() {

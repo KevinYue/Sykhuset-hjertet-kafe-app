@@ -9,11 +9,14 @@
         <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_baseline_shopping_cart_24.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_search_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/rounded_corner.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/selector.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_front.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.15" />
+        <entry key="app/src/main/res/layout/category_list_item.xml" value="0.37809313288437046" />
         <entry key="app/src/main/res/layout/fragment_about.xml" value="0.16" />
         <entry key="app/src/main/res/layout/fragment_category.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_category_detail.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_orders.xml" value="0.1" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.15" />
