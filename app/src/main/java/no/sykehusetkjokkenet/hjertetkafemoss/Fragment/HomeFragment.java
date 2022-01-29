@@ -55,7 +55,7 @@ public class HomeFragment extends Fragment {
             Category clickedCategory = categoryList.get(position);
 
             // Creates the navigation directions action, including the uid
-            NavDirections action = actionHomeDestToCategoryDetailFragment(clickedCategory.getUid());
+            NavDirections action = (NavDirections) actionHomeDestToCategoryDetailFragment(clickedCategory.getUid());
 
             // Calls the navigation action, and lead us to the CategoryDetailFragment
             Navigation.findNavController(view1).navigate(action);
