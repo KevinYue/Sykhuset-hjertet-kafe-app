@@ -1,5 +1,7 @@
 package no.sykehusetkjokkenet.hjertetkafemoss.Fragment;
 
+import static no.sykehusetkjokkenet.hjertetkafemoss.Fragment.HomeFragmentDirections.actionHomeDestToCategoryDetailFragment;
+
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -45,29 +47,25 @@ public class HomeFragment extends Fragment {
 
         categoryRecyclerView = view.findViewById(R.id.categoryRecyclerView);
 
-        categoryRecyclerView.setAdapter(new CategoryRecyclerAdapter(view.getContext(), categoryList, new View.OnClickListener(){
+        categoryRecyclerView.setAdapter(new CategoryRecyclerAdapter(view.getContext(), categoryList, view1 -> {
+            // Gets the position of the item that's clicked
+            int position = categoryRecyclerView.getChildAdapterPosition(view1);
 
-            @Override
-            public void onClick(View view) {
-                // Gets the position of the item that's clicked
-                int position = categoryRecyclerView.getChildAdapterPosition(view);
+            // Gets the category based on which item got clicked
+            Category clickedCategory = categoryList.get(position);
 
-                // Gets the category based on which item got clicked
-                Category clickedCategory = categoryList.get(position);
+            // Creates the navigation directions action, including the uid
+            NavDirections action = actionHomeDestToCategoryDetailFragment(clickedCategory.getUid());
 
-                // Creates the navigation directions action, including the uid
+            // Calls the navigation action, and lead us to the CategoryDetailFragment
+            Navigation.findNavController(view1).navigate(action);
 
-                // Calls the navigation action, and lead us to the CategoryDetailFragment
-                Navigation.findNavController(view).navigate((NavDirections) clickedCategory);
-
-                // Create a Toast text with the category clicked
-                Toast.makeText(view.getContext(), clickedCategory.getTitle() + " clicked", Toast.LENGTH_LONG).show();
-            }
+            // Create a Toast text with the category clicked
+            Toast.makeText(view1.getContext(), clickedCategory.getTitle() + " clicked", Toast.LENGTH_LONG).show();
         }));
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
 
-        //categoryRecyclerView = view.findViewById(R.id.categoryRecyclerView);
         categoryRecyclerView.setLayoutManager(linearLayoutManager);
 
     }

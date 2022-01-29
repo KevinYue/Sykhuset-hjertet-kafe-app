@@ -31,7 +31,7 @@ public class CategoryRecyclerAdapter extends RecyclerView.Adapter<CategoryRecycl
     @NonNull
     @Override
     public CategoryViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        // Having a Log message for seeing onCreateViewHolder method
+        // Having a Log message for seeing onCreateViewHolder method is called
         Log.d("CategoryAdapter", "Creating View");
 
         // Inflates the category_list_item.xml to a view for us

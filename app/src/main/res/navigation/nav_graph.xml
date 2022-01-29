@@ -44,5 +44,9 @@
         android:id="@+id/categoryDetailFragment"
         android:name="no.sykehusetkjokkenet.hjertetkafemoss.Fragment.CategoryDetailFragment"
         android:label="fragment_category_detail"
-        tools:layout="@layout/fragment_category_detail" />
+        tools:layout="@layout/fragment_category_detail" >
+        <argument
+            android:name="uid"
+            app:argType="integer" />
+    </fragment>
 </navigation>

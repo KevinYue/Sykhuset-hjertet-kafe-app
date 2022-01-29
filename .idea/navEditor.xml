@@ -38,15 +38,6 @@
                             <option name="y" value="28" />
                           </Point>
                         </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_categoryDetailFragment_to_home_dest">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
-                        </option>
                       </LayoutPositions>
                     </value>
                   </entry>
@@ -83,6 +74,11 @@
                         <option name="myPositions">
                           <map>
                             <entry key="action_homeFragment_to_categoryFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_home_dest_to_categoryDetailFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
