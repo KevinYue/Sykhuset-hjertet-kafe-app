@@ -5,19 +5,14 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import java.util.ArrayList;
-
-import no.sykehusetkjokkenet.hjertetkafemoss.Model.Category;
 import no.sykehusetkjokkenet.hjertetkafemoss.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private RecyclerView recyclerViewCategory;
+    //private RecyclerView recyclerViewCategory;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

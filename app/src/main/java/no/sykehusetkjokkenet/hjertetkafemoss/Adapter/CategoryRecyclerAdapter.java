@@ -11,8 +11,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.List;
 
+import no.sykehusetkjokkenet.hjertetkafemoss.Fragment.HomeFragment;
 import no.sykehusetkjokkenet.hjertetkafemoss.Model.Category;
 import no.sykehusetkjokkenet.hjertetkafemoss.R;
 
@@ -20,12 +23,15 @@ public class CategoryRecyclerAdapter extends RecyclerView.Adapter<CategoryRecycl
 
     private List<Category> data;
     private LayoutInflater inflater;
-    private View.OnClickListener onClickListener;
+    private View.OnClickListener clickListener;
 
-    public CategoryRecyclerAdapter(Context context, List<Category> data, View.OnClickListener onClickListener) {
+    public void setOnItemClickListener(View.OnClickListener clickListener) {
+        this.clickListener = clickListener;
+    }
+
+    public CategoryRecyclerAdapter(HomeFragment context, List<Category> data) {
         this.data = data;
         this.inflater = LayoutInflater.from(context);
-        this.onClickListener = onClickListener;
     }
 
     @NonNull
@@ -51,9 +57,14 @@ public class CategoryRecyclerAdapter extends RecyclerView.Adapter<CategoryRecycl
         // Gets the movie data we ar going to use at the given position
         Category currentCategory = data.get(position);
 
+        holder.setData(currentCategory);
+
         // Gives the movie data and clickListener to the ViewHolder
         // Makes it fill up the given position with the new data and add the clickListener to the view
-        holder.bind(currentCategory, onClickListener);
+        //holder.bind(currentCategory, onClickListener);
+        if (clickListener != null) {
+            holder.itemView.setOnClickListener(clickListener);
+        }
 
     }
 
@@ -73,16 +84,16 @@ public class CategoryRecyclerAdapter extends RecyclerView.Adapter<CategoryRecycl
             categoryImage = itemView.findViewById(R.id.categoryImageView);
         }
 
-        public void bind(Category currentCategory, View.OnClickListener onClickListener) {
+        /*public void bind(Category currentCategory, View.OnClickListener onClickListener) {
             // Fills the views with the given data
             categoryImage.setImageResource(currentCategory.getPoster());
             categoryTitle.setText(currentCategory.getTitle());
 
             // Sets the onClickListener
             this.itemView.setOnClickListener(onClickListener);
-        }
+        }*/
 
-        /*public void setData(Category currentObject) {
+        public void setData(Category currentObject) {
             this.categoryTitle.setText(currentObject.getTitle());
 
             String categoryPosterUrl = currentObject.getPoster();
@@ -95,6 +106,6 @@ public class CategoryRecyclerAdapter extends RecyclerView.Adapter<CategoryRecycl
             }
             else
                 categoryImage.setImageResource(R.drawable.foods);
-        }*/
+        }
     }
 }

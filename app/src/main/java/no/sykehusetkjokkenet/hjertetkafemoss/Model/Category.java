@@ -1,20 +1,34 @@
 package no.sykehusetkjokkenet.hjertetkafemoss.Model;
 
-import java.util.ArrayList;
-
-import no.sykehusetkjokkenet.hjertetkafemoss.R;
-
 public class Category {
     private int uid;
     private String title;
-    private int poster;
-    private String description;
-    private Double price;
-    private int card;
+    private String poster;
 
-    public Category(int uid, String title, int poster) {
+    public Category(int uid, String title) {
         this.uid = uid;
         this.title = title;
+    }
+
+    public Category(int uid, String title, String poster) {
+        this.uid = uid;
+        this.title = title;
+        this.poster = poster;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getPoster() {
+        return poster;
+    }
+
+    public void setPoster(String poster) {
         this.poster = poster;
     }
 
@@ -26,47 +40,7 @@ public class Category {
         this.uid = uid;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public int getPoster() {
-        return poster;
-    }
-
-    public void setPoster(int poster) {
-        this.poster = poster;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public Double getPrice() {
-        return price;
-    }
-
-    public void setPrice(Double price) {
-        this.price = price;
-    }
-
-    public int getCard() {
-        return card;
-    }
-
-    public void setCard(int card) {
-        this.card = card;
-    }
-
-    public static ArrayList<Category> getCategories() {
+    /*public static ArrayList<Category> getCategories() {
         ArrayList categoryData = new ArrayList<Category>();
 
         int[] images = new int[] {
@@ -92,5 +66,5 @@ public class Category {
             categoryData.add(aCategory);
         }
         return categoryData;
-    }
+    }*/
 }

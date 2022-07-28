@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "714053032802",
+    "project_id": "hjertet-kafe-moss",
+    "storage_bucket": "hjertet-kafe-moss.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714053032802:android:06bf3538f5cbd41f68aa3b",
+        "android_client_info": {
+          "package_name": "no.sykehusetkjokkenet.hjertetkafemoss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "714053032802-heutt9oeg29g7dcba21lovuhk8cuqpq5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "no.sykehusetkjokkenet.hjertetkafemoss",
+            "certificate_hash": "3e4e74b5ca8cf18d5ea04064c0e39e4547dece8b"
+          }
+        },
+        {
+          "client_id": "714053032802-nu1tvjdppekc6n8pkc3j88ir6aek5cvv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpqzHH9yGka8NGvlq0Bb5efvkzfJHlwKk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "714053032802-nu1tvjdppekc6n8pkc3j88ir6aek5cvv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
